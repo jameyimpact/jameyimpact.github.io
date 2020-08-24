@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OCR | Zijian (Jamey) Zhang</title>
+    <link>https://jameyimpact.github.io/tag/ocr/</link>
+      <atom:link href="https://jameyimpact.github.io/tag/ocr/index.xml" rel="self" type="application/rss+xml" />
+    <description>OCR</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 Aug 2020 11:53:53 -0700</lastBuildDate>
+    <image>
+      <url>https://jameyimpact.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>OCR</title>
+      <link>https://jameyimpact.github.io/tag/ocr/</link>
+    </image>
+    
+    <item>
+      <title>An OCR System for Customer Clearance</title>
+      <link>https://jameyimpact.github.io/post/unix/</link>
+      <pubDate>Sun, 23 Aug 2020 11:53:53 -0700</pubDate>
+      <guid>https://jameyimpact.github.io/post/unix/</guid>
+      <description>&lt;p&gt;Optical character recognition (OCR) is a way of extracting plain text from images containing text. Customs clearance is a document given by customs to a shipper to show that customs duty has been paid and the goods can be shipped. Most of these documents are image based. It means texts in the documents cannot be copied and pasted. I have built a Tesseract based OCR system which can preprocess, segment and recognize the image-based PDF files. These recognized texts can be stored in a database for future usage.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;For preprocessing component, image-based PDF files can be rotated, split, converted to images, deskewed and combined. After preprocessing, the image-based PDF can be ready to be recognized with a clear format. 
+&lt;img src=&#34;pdf2img.gif&#34; alt=&#34;Mobile app&#34; title=&#34;Convert PDFs to images&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-convert-pdfs-to-images&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Convert PDFs to images&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Convert PDFs to images
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ 
+&lt;img src=&#34;clearimg.gif&#34; alt=&#34;Mobile app&#34; title=&#34;Clear Images&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-clear-images&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Clear images&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Clear images
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For segmentation component, I use zonal OCR to segment image-based PDF files based on the areas selected by users and output zonal templates. Zonal OCR can help users process the same layout files and extract keywords and attributes efficiently. Full OCR can use tesseract to automatically segment the whole page of the PDF file. However, users cannot control this segmentation process.
+&lt;img src=&#34;zonalOCR_segmentation.gif&#34; alt=&#34;Mobile app&#34; title=&#34;zonalOCR_segmentation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-zonal-ocr-segmentation&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Zonal OCR segmentation&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Zonal OCR segmentation
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For recognition component, zonal OCR can recognize image-based PDF files based on the zonal templates. Users can easily modify the recognize results in the web page and export the modified results to excel files; full OCR can recognize all the content in image-based PDF files. Users can extract wanted keywords and attributes based predefined templates which is created by regular expression and export the extracted information to json files. 
+&lt;img src=&#34;zonalOCR_recognition.gif&#34; alt=&#34;Mobile app&#34; title=&#34;zonalOCR_recognition&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-zonal-ocr-recognition&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Zonal OCR recognition&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Zonal OCR recognition
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ 
+&lt;img src=&#34;fullOCR_recognition.gif&#34; alt=&#34;Mobile app&#34; title=&#34;fullOCR_recognition&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-full-ocr-recognition&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Full OCR recognition&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Full OCR recognition
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ 
+&lt;img src=&#34;fullOCR_extraction.gif&#34; alt=&#34;Mobile app&#34; title=&#34;fullOCR_extraction&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-full-ocr-extraction&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Full OCR extraction&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Full OCR extraction
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

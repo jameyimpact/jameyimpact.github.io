@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Tech | Zijian (Jamey) Zhang</title>
+    <link>https://jameyimpact.github.io/tag/web-tech/</link>
+      <atom:link href="https://jameyimpact.github.io/tag/web-tech/index.xml" rel="self" type="application/rss+xml" />
+    <description>Web Tech</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 21 Aug 2020 21:05:54 -0700</lastBuildDate>
+    <image>
+      <url>https://jameyimpact.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Web Tech</title>
+      <link>https://jameyimpact.github.io/tag/web-tech/</link>
+    </image>
+    
+    <item>
+      <title>eBay Product Search</title>
+      <link>https://jameyimpact.github.io/post/ebay/</link>
+      <pubDate>Fri, 21 Aug 2020 21:05:54 -0700</pubDate>
+      <guid>https://jameyimpact.github.io/post/ebay/</guid>
+      <description>&lt;p&gt;I individually developed a web app that allows users to search items for sale on eBay.com using their API. By typing in keywords and setting filters, users can view the items list that meet their requirements, as well as the detailed information of each product.&lt;/p&gt;
+&lt;p&gt;The first implementation is a non-responsive design. Technically, I&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write Python scripts using Flask which
+&lt;ul&gt;
+&lt;li&gt;listens to AJAX calls from the front end web page,&lt;/li&gt;
+&lt;li&gt;calls ebay developers APIs to get raw JSON response using a URL REST request,&lt;/li&gt;
+&lt;li&gt;responds frontend webpage with processed JSON text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Design frontend webpage using HTML, CSS, JavaScript, HTML DOM and XMLHTTPRequest object.&lt;/li&gt;
+&lt;li&gt;Deploy the app on Google Cloud Platform App Engine.
+&lt;img src=&#34;ebay6.gif&#34; alt=&#34;Non-responsive design&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-non-responsive-design&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jameyimpact.github.io/post/ebay/ebay6_hu56a3530c5b3d6967e34568d1ffb8b97a_19005042_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Non-responsive design&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jameyimpact.github.io/post/ebay/ebay6_hu56a3530c5b3d6967e34568d1ffb8b97a_19005042_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1888&#34; height=&#34;972&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Non-responsive design
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ --&gt;
+&lt;p&gt;The second implementation is a responsive design. Technically, I&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write NodeJS scripts which
+&lt;ul&gt;
+&lt;li&gt;listens to AJAX calls from the front end web page,&lt;/li&gt;
+&lt;li&gt;calls ebay developers APIs to get raw JSON response using a URL REST request&lt;/li&gt;
+&lt;li&gt;responds frontend webpage with processed JSON text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Design frontend webpage using Angular8, implemented two way data binding, page routing and AJAX calls, set styling with Bootstrap to make it compatible with mobile devices.&lt;/li&gt;
+&lt;li&gt;Deploy the app on Google Cloud Platform App Engine.
+&lt;img src=&#34;ebay81.gif&#34; alt=&#34;Responsive design&#34;&gt;
+&lt;img src=&#34;ebay82.gif&#34; alt=&#34;Responsive design&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-responsive-design&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jameyimpact.github.io/post/ebay/ebay81_hue2187b0be88d65848ae9dab775f1b965_21198712_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Responsive design&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jameyimpact.github.io/post/ebay/ebay81_hue2187b0be88d65848ae9dab775f1b965_21198712_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1888&#34; height=&#34;972&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Responsive design
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-responsive-design&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jameyimpact.github.io/post/ebay/ebay82_hu57cb43683cd4acd73a7e91db4e9ce054_17327896_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Responsive design&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jameyimpact.github.io/post/ebay/ebay82_hu57cb43683cd4acd73a7e91db4e9ce054_17327896_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1888&#34; height=&#34;972&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Responsive design
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ --&gt;
+&lt;p&gt;Finally, I implement all functions of the web app to a mobile app, which allows users to search through the eBay items catalog and look at the detailed information about them. The App contains 5 screens: Initial Form, Item Catalog, Product Information screen, Seller Information screen and Shipping Information screen. The app has been designed and implemented in a Pixel 2XL emulator by using SDK API 29. Technically, I&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Develop the android app on AndroidStudio using Java.&lt;/li&gt;
+&lt;li&gt;Design user friendly layouts featured Splash Screen, Navigation Bars, CardView, ViewPager and so on.&lt;/li&gt;
+&lt;li&gt;Implement asynchronous functions including image loading and AJAX calls.&lt;/li&gt;
+&lt;li&gt;Call eBay api on the frontend to provide related images on Internet for each product.&lt;/li&gt;
+&lt;li&gt;Use Node.js on server side, which is deployed on Google Cloud Platform App Engine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;ebay9.gif&#34; alt=&#34;Mobile app&#34; title=&#34;Mobile app&#34;&gt;&lt;/p&gt;
+&lt;!-- ![space-1.jpg](ebay9.gif) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-steve-francia&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;&#34; data-caption=&#34;Steve Francia&#34;&gt;
+
+
+  &lt;img src=&#34;&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Steve Francia
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ --&gt;
+&lt;!-- 
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-mobile-app&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jameyimpact.github.io/post/ebay/ebay9_hu350df382daa204f0de350ee68cc97f4c_17566585_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Mobile app&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jameyimpact.github.io/post/ebay/ebay9_hu350df382daa204f0de350ee68cc97f4c_17566585_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1888&#34; height=&#34;972&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Mobile app
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+ --&gt;
+&lt;!-- ![coloring2](/content/post/aaa.gif)
+![coloring2](/img/post/aaa.gif) --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

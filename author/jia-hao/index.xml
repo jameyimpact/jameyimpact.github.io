@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jia Hao | Zijian (Jamey) Zhang</title>
+    <link>https://jameyimpact.github.io/author/jia-hao/</link>
+      <atom:link href="https://jameyimpact.github.io/author/jia-hao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jia Hao</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jameyimpact.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Jia Hao</title>
+      <link>https://jameyimpact.github.io/author/jia-hao/</link>
+    </image>
+    
+    <item>
+      <title>A quantitative approach to design alternative evaluation based on data-driven performance prediction</title>
+      <link>https://jameyimpact.github.io/publication/zhang-201752/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://jameyimpact.github.io/publication/zhang-201752/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,28 @@
     <link>https://jameyimpact.github.io/publication/</link>
       <atom:link href="https://jameyimpact.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jameyimpact.github.io/img/p1.jpg</url>
       <title>Publications</title>
       <link>https://jameyimpact.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>An Unsupervised Deep Learning Model to Discover Visual Similarity Between Sketches for Visual Analogy Support</title>
+      <link>https://jameyimpact.github.io/publication/zhang-2020-an/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://jameyimpact.github.io/publication/zhang-2020-an/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A quantitative approach to design alternative evaluation based on data-driven performance prediction</title>
+      <link>https://jameyimpact.github.io/publication/zhang-201752/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://jameyimpact.github.io/publication/zhang-201752/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
